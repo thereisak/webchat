@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>webchat</title>
+		<link rel="stylesheet" href="css/index_style.css"/>
+	</head>
+	<body>
+	<div class="main">
+		<div class="left">
+			<div class="left_top">
+				<span> 左侧顶栏</span>
+				<img src="img/background.jpg"  height=60 width=60 />
+				<div class="name"><span >&nbsp;姓名</span></div>
+			</div>
+			<div class="left_down">
+				<div class="sidebar">					
+				    <span> 侧边栏</span><br />								
+			    </div>
+				<div class="session_area">
+					<p>会话列表</p>
+					<ul id="session_list">
+						<li class="session">
+						<div>
+							
+							<img src="img/background.jpg"  height=60 width=60 />
+							<div>
+								<div class="name"><span >&nbsp;姓名</span></div>
+								<div class="mini_message"><span >&nbsp;消息内容</span></div>
+							</div>
+						</div>	
+						</li>
+						<li class="session">
+						<div>
+							
+							<img src="img/background.jpg"  height=60 width=60 />
+							<div>
+								<div class="name"><span >&nbsp;姓名</span></div>
+								<div class="mini_message"><span >&nbsp;消息内容</span></div>
+							</div>
+						</div>	
+						</li>
+					</ul>
+					
+				</div>
+			</div>
+			
+		</div>
+		<div class="right">
+			<div class="right_top">
+				<span id="talkto">和谁聊天</span>
+			</div>
+			<div class="message_area">
+				<span>聊天消息列表</span><br/><br/>
+				<ul id="message_list">
+					<li class="message">
+					<div class="time">时间</div>						
+						<img src="img/background.jpg"  height=50 width=50 />
+							<div class="other_name"><span >&nbsp;姓名</span></div>
+							<div class="other_message"><span >&nbsp;消息内容</span></div>		
+					</li>
+					<li class="message">
+						<div class="time">时间</div>		
+						<img src="img/background.jpg"  height=50 width=50 />
+							<div class="other_name"><span >&nbsp;姓名</span></div>
+							<div class="other_message"><span >消息内容</span></div>	
+					</li>
+					<li class="message">
+						<div class="time">时间</div>		
+						<img src="img/background.jpg"  height=50 width=50 style="float:right;padding-top: 8px;margin-right: 10px;"/>
+							<div class="my_name"><span >姓名&nbsp;</span></div>
+							<div class="my_message"><span >消息内容</span></div>	
+					</li>
+				</ul>
+			</div>
+			<div class="input_area">
+				<span>输入区</span><br />
+				<textarea id="text"></textarea>
+				<div id="send" id="send"><button id="send">发送</button></div>
+			</div>
+		</div>
+	</div>	
+	</body>
+</html>
